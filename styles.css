@@ -53,7 +53,7 @@ body {
   background-position: top 10px right -250px;
   background-clip: border-box;
   background-attachment: fixed;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #fff;
   scroll-behavior: smooth;
   transition: background-size 1s;
@@ -76,6 +76,7 @@ h2 {
 }
 
 h1, h2 {
+  font-family: 'Rubik', sans-serif;
   margin-top: .75em;
   margin-bottom: .5em;
 }
