@@ -1,0 +1,252 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(1, 1, 1);
+  background-image: url(assets/mars.jpg);
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position: top 10px right -250px;
+  background-clip: border-box;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  scroll-behavior: smooth;
+  transition: background-size 1s;
+}
+
+main {
+  max-width: 700px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 70px auto 20px auto;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 50px;
+  transform: translateZ(1px) scale(1);
+}
+
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h1, h2 {
+  margin-top: .75em;
+  margin-bottom: .5em;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.rovers-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 28px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.21);
+  overflow: hidden;
+  transition: all 500ms;
+}
+
+.card > div:nth-child(1) {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(to bottom, transparent 90px, #010101);
+}
+
+.card > div:nth-child(1) img {
+  position: relative;
+  top: var(--top, 0);
+  left: var(--left, 0);
+  width: var(--width, 100%);
+  z-index: -5;
+}
+
+.card > div:nth-child(1) h2 {
+  position: absolute;
+  bottom: 0;
+  padding: 0 16px;
+}
+
+.card > div:nth-child(2) p {
+  font-size: 16px;
+  padding: 16px;
+  line-height: 1.6em;
+  word-wrap: break-word;
+  hyphens: auto;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 33rem) {
+  .rovers-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main {
+    margin: 100px auto 20px auto;
+  }
+  body {
+    background-position: top 50px right calc(2vw - 250px);
+    background-size: 800px;
+  }
+}
+
+@media screen and (max-width: 33rem) {
+  .card > div:nth-child(1) img {
+    --top: 0;
+    --left: 0;
+    --width: 100%;
+  }
+}
+
+@media screen and (min-width: 68rem) {
+  body {
+    background-size: 50vw;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .rovers-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  main {
+    max-width: 1200px;
+  }
+  .card > div:nth-child(1) img {
+    --top: 0;
+    --left: 0;
+    --width: 100%;
+  }
+}
+
+footer {
+  background-image: linear-gradient(to bottom, transparent, #d0d0d0aa, #ddd 40%);
+  text-align: center;
+  padding: 180px 0 40px 0;
+  color: #010101;
+}
+
+footer span {
+  display: block;
+  margin: 8px 0;
+}
+
+.filters {
+  line-height: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 16px 0;
+  align-items: center;
+}
+
+.filters svg {
+  margin-right: 8px;
+}
+
+.typepicker {
+  display: none;
+}
+
+label {
+  padding: 4px 16px;
+  margin-right: 8px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.21);
+  transition: background-color 200ms;
+  cursor: pointer;
+  user-select: none;
+  margin: 4px 4px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+label:last-of-type {
+  margin-right: 0;
+}
+
+input#active:checked ~ .filters label[for=active],
+input#inactive:checked ~ .filters label[for=inactive],
+input#failed:checked ~ .filters label[for=failed],
+input#planned:checked ~ .filters label[for=planned] {
+  background-color: #fff;
+  color: #333;
+}
+
+input:checked ~ .rovers-content .card {
+  display: none;
+  height: 0px;
+  border: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+input#active:checked ~ .rovers-content .card.active,
+input#inactive:checked ~ .rovers-content .card.inactive,
+input#failed:checked ~ .rovers-content .card.failed,
+input#planned:checked ~ .rovers-content .card.planned {
+  display: block;
+  height: auto;
+  width: auto;
+  border: 1px solid rgba(255, 255, 255, 0.21);
+}
