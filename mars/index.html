@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mars Rovers | Patsagorn Y.</title>
+  <base target="_blank" />
+  <link rel="icon" sizes="192x192" href="/assets/mars.png">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Rubik:wght@500;700&display=swap"
+    rel="stylesheet">
+  <meta name="theme-color" content="#f18755">
+  <meta name="description" content="Gallery of Mars rover.">
+  <meta name="robots" content="index,follow">
+  <meta name="google" content="nositelinkssearchbox">
+  <meta name="rating" content="General">
+  <meta name="referrer" content="no-referrer">
+  <meta name="format-detection" content="telephone=no">
+</head>
+
+<body>
+  <noscript class="nojs">You didn't enabled JavaScript yet. But don't worry! This site still work just fine~~</noscript>
+  <main>
+    <input type="checkbox" id="active" name="active" class="typepicker">
+    <input type="checkbox" id="inactive" name="inactive" class="typepicker">
+    <input type="checkbox" id="failed" name="failed" class="typepicker">
+    <input type="checkbox" id="planned" name="planned" class="typepicker">
+    <h1>
+      Mars rovers
+    </h1>
+    <div class="filters">
+      <input type="checkbox" id="open-filters" />
+      <label for="open-filters">
+        <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg" title="Filters">
+          <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m4.5 7.5h12" />
+            <path d="m6.5 10.5h8" />
+            <path d="m8.5 13.5h4" />
+          </g>
+        </svg>
+      </label>
+      <label for="active" tabindex="1">Active</label><label for="inactive" tabindex="2">Inactive</label><label
+        for="failed" tabindex="3">Failed</label><label for="planned" tabindex="4">Planned</label>
+    </div>
+    <div class="rovers-content">
+      <div class="card active">
+        <div>
+          <h2 translate="no">Curiosity</h2>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Curiosity_Self-Portrait_at_%27Big_Sky%27_Drilling_Site.jpg/390px-Curiosity_Self-Portrait_at_%27Big_Sky%27_Drilling_Site.jpg"
+            alt="Self-portrait by Curiosity at the foot of Mount Sharp in October 2015" />
+        </div>
+        <div>
+          <p>launched November 26, 2011 and landed at the Aeolis Palus plain near Aeolis Mons (informally "Mount Sharp")
+            in Gale
+            Crater on August 6, 2012. The Curiosity rover is still operational as of October 2022.</p>
+        </div>
+      </div>
+      <div class="card active" style="--width: 500px; --left: -175px;">
+        <div>
+          <h2 translate="no">Perseverance</h2>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Perseverance-Selfie-at-Rochette-Horizontal-V2.gif/800px-Perseverance-Selfie-at-Rochette-Horizontal-V2.gif"
+            alt="Self-portrait by Perseverance in September 2021 at Rochette, a rock and the site of the first core samples of the Mars 2020 mission." />
+        </div>
+        <div>
+          <p>
+            NASA rover based on the successful Curiosity design. Launched with the Mars 2020 mission on July 30, 2020,
+            it landed on
+            February 18, 2021. It carried the Mars Helicopter Ingenuity attached to its belly.
+          </p>
+        </div>
+      </div>
+      <div class="card active" style="--width: 450px; --left: -85px;">
+        <div>
+          <h2 translate="no">Zhurong</h2>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Zhurong-with-lander-selfie.png/390px-Zhurong-with-lander-selfie.png"
+            alt="Self-portrait by Curiosity at the foot of Mount Sharp in October 2015" />
+        </div>
+        <div>
+          <p>
+            launched with the Tianwen-1 CNSA Mars mission on July 23, 2020, landed on May 14, 2021 in the southern
+            region of Utopia
+            Planitia, and deployed on May 22, 2021, while dropping a remote selfie camera on 1 June, 2021.
+          </p>
+        </div>
+      </div>
+      <div class="card inactive">
+        <div>
+          <h2 translate="no">PrOP-M (Mars 3)</h2>
+          <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/PrOP-M_moving_on_skis.gif" alt="Moving rover" />
+        </div>
+        <div>
+          <p>
+            landed successfully on December 2, 1971. 4.5 kilograms (9.9 lb) rover tethered to the Mars 3 lander. Lost
+            when the Mars
+            3 lander stopped communicating about 14.5 seconds after landing. The loss of communication may have been due
+            to the
+            extremely powerful Martian dust storm taking place at the time or an issue with the Mars 3 orbiter's ability
+            to relay
+            communications.
+          </p>
+        </div>
+      </div>
+      <div class="card inactive" style="--top: -130px; --width: 400px;">
+        <div>
+          <h2 translate="no">Mars Pathfinder (Sojourner)</h2>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Sojourner_on_Mars_PIA01122.jpg/800px-Sojourner_on_Mars_PIA01122.jpg"
+            alt="Sojourner rover on Mars on sol 22" />
+        </div>
+        <div>
+          <p>landed successfully on July 4, 1997. Communications were lost on September 27, 1997. Sojourner had traveled
+            a distance
+            of just over 100 meters (330 ft).
+          </p>
+        </div>
+      </div>
+      <div class="card inactive" style="--top: -40px">
+        <div>
+          <h2 translate="no">Spirit</h2>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/NASA_Mars_Rover.jpg/800px-NASA_Mars_Rover.jpg"
+            alt="Artist's conception of MER rovers on Mars" />
+        </div>
+        <div>
+          <p>launched on June 10, 2003, and landed on January 4, 2004. Nearly 6 years after the original mission limit,
+            Spirit had
+            covered a total distance of 7.73 km (4.80 mi) but its wheels became trapped in sand. The last communication
+            received
+            from the rover was on March 22, 2010, and NASA ceased attempts to re-establish communication on May 25,
+            2011.
+          </p>
+        </div>
+      </div>
+      <div class="card inactive" style="--top: -40px">
+        <div>
+          <h2 translate="no">Opportunity</h2>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/NASA_Mars_Rover.jpg/800px-NASA_Mars_Rover.jpg"
+            alt="An artist's portrayal of Opportunity operating on the surface of Mars." />
+        </div>
+        <div>
+          <p>launched on July 7, 2003 and landed on January 25, 2004. Opportunity surpassed the previous records for
+            longevity at
+            5,352 sols (5498 Earth days from landing to mission end; 15 Earth years or 8 Martian years) and covered
+            45.16 km (28.06
+            mi). The rover sent its last status on 10 June 2018 when a global 2018 Mars dust storm blocked the sunlight
+            needed to
+            recharge its batteries. After hundreds of attempts to reactivate the rover, NASA declared the mission
+            complete on
+            February 13, 2019.
+          </p>
+        </div>
+      </div>
+      <div class="card failed">
+        <div>
+          <h2 translate="no">PrOP-M (Mars 2)</h2>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Mars3_lander_vsm.jpg"
+            alt="Mars 2 Lander model at the Memorial Museum of Cosmonautics in Russia" />
+        </div>
+        <div>
+          <p>In 1971, Mars 2 landing failed taking Prop-M with it. The Mars 2 and 3 spacecraft from the Soviet Union had
+            identical 4.5
+            kg Prop-M rovers. They were to move on skis while connected to the landers with cables.
+          </p>
+        </div>
+      </div>
+      <div class="card planned" style="--width: 400px;">
+        <div>
+          <h2 translate="no">Rosalind Franklin</h2>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/ExoMars_Rosalind_Franklin_rover.png/800px-ExoMars_Rosalind_Franklin_rover.png"
+            alt="Artist’s impression of the Rosalind Franklin ExoMars rover. This image shows a front view of the rover with the drill in a vertical position." />
+        </div>
+        <div>
+          <p>The European-Russian ExoMars rover Rosalind Franklin was confirmed technically ready for launch in March
+            2022 and
+            planned to launch in September 2022, but due to the suspension of cooperation with Roscosmos this is delayed
+            and a
+            fast-track study was started to determine alternative launch options.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<footer>
+  <img src="assets/curiosity.png" alt="Curiosity outline art" height="100">
+  <span>Work by <a href="https://github.com/ptsgrn" title="See my Github profile">Patsagorn Y.</a></span>
+  <span>As a part of <a href="https://gamertocoder.garena.co.th/" target="_blank" rel="noopener noreferrer">Garena Gamer
+      to Coder</a>
+    (<a href="https://github.com/ptsgrn/garena-gtc">Source at GitHub</a>).</span>
+  <span><a href="#attributions">Image attributions</a></span>
+  <section id="attributions">
+    <ul>
+      <li>Mars in the background: <a href="https://unsplash.com/photos/4IrVnSpwk48" target="_blank"
+          rel="noopener noreferrer">Planetary Volumes Mars by Planet Volumes</a>.</li>
+      <li>Favicon: <a href="https://www.flaticon.com/free-icon/mars_8700164" target="_blank"
+          rel="noopener noreferrer">Mars free icon by jojooid</a>.</li>
+      <li>Filter icon: <a href="https://www.systemuicons.com/" target="_blank" rel="noopener noreferrer">System
+          UIcons</a></li>
+      <li>Curiosity Self-Portrait at 'Big Sky' Drilling Site.jpg: <a
+          href="https://commons.wikimedia.org/wiki/File:Curiosity_Self-Portrait_at_%27Big_Sky%27_Drilling_Site.jpg"
+          target="_blank" rel="noopener noreferrer">File:Curiosity Self-Portrait at 'Big Sky' Drilling Site.jpg at
+          Wikimedia Commons</a></li>
+      <li>Zhurong-with-lander-selfie.png: <a
+          href="https://commons.wikimedia.org/wiki/File:Zhurong-with-lander-selfie.png" target="_blank"
+          rel="noopener noreferrer">File:Zhurong-with-lander-selfie.png
+          at
+          Wikimedia Commons</a></li>
+      <li></li>
+      <li>PrOP-M_moving_on_skis.gif: <a href="https://www.planetary.org/space-images/Mars3_RoverAnim" target="_blank"
+          rel="noopener noreferrer">Soviet Space Program / VNIITransmash</a></li>
+      <li>NASA_Mars_Rover.jpg: <a href="https://commons.wikimedia.org/wiki/File:NASA_Mars_Rover.jpg" target="_blank"
+          rel="noopener noreferrer">NASA_Mars_Rover.jpg
+          at
+          Wikimedia Commons</a></li>
+      <li>Mars3 lander vsm.jpg: <a href="https://commons.wikimedia.org/wiki/File:Mars3 lander vsm.jpg" target="_blank"
+          rel="noopener noreferrer">File:Mars3 lander vsm.jpg
+          at
+          Wikimedia Commons</a></li>
+      <li>Sojourner on Mars PIA01122.jpg: <a
+          href="https://commons.wikimedia.org/wiki/File:Sojourner on Mars PIA01122.jpg" target="_blank"
+          rel="noopener noreferrer">File:Sojourner on Mars PIA01122.jpg
+          at
+          Wikimedia Commons</a></li>
+      <li>ExoMars Rosalind Franklin rover.png: <a
+          href="https://commons.wikimedia.org/wiki/File:ExoMars Rosalind Franklin rover.png" target="_blank"
+          rel="noopener noreferrer">File:ExoMars Rosalind Franklin rover.png
+          at
+          Wikimedia Commons</a></li>
+      <li>NASA Mars Rover.jpg: <a href="https://commons.wikimedia.org/wiki/File:NASA Mars Rover.jpg" target="_blank"
+          rel="noopener noreferrer">File:NASA Mars Rover.jpg
+          at
+          Wikimedia Commons</a></li>
+      <li>Perseverance-Selfie-at-Rochette-Horizontal-V2.gif: <a
+          href="https://commons.wikimedia.org/wiki/File:Perseverance-Selfie-at-Rochette-Horizontal-V2.gif"
+          target="_blank" rel="noopener noreferrer">File:Perseverance-Selfie-at-Rochette-Horizontal-V2.gif
+          at
+          Wikimedia Commons</a></li>
+      <li>Mars3_lander_vsm.jpg: <a href="https://commons.wikimedia.org/wiki/File:Mars3_lander_vsm.jpg" target="_blank"
+          rel="noopener noreferrer">File:Mars3_lander_vsm.jpg
+          at
+          Wikimedia Commons</a></li>
+      <li>curiosity.png: <a href="https://www.pngegg.com/en/png-mtmtm" target="_blank" rel="noopener noreferrer">Mars
+          Exploration Rover Mars Science Laboratory Mars rover Curiosity, nasa, angle, furniture png, Non-commercial
+          use,
+          DMCA</a></li>
+    </ul>
+  </section>
+</footer>
+
+</html>
