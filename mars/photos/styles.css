@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  /* max-width: 800px; */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+  grid-auto-rows: 200px;
+}
+
+.gallery > .image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  color: white;
+  text-shadow: 0 0 5px black;
+}
